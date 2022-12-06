@@ -7,36 +7,9 @@ import axios from 'axios'
 
 const Home = () => {
 
-  const [odontologo, setOdontologo] = useState([])
+const [odontologo, setOdontologo] = useState([])
 
-  const [fav, setFav] = useState([])
-
-  // useEffect(()=>{
-  //   localStorage.setItem("favs", JSON.stringify(fav))
-
-  // },[fav]) 
-
-  
-//   const eliminarDeFav = (odontologo) => {
-//     //busco su indice en el array:
-//     let index = favoritos.indexOf(odontologo.name);
-
-//     //si existe (si es distinto a -1), lo borro con el método: splice
-//     if(index != -1){
-//         favoritos.splice(index, 1)
-//     }
-// }
-  
-  // let favoritos = [{name: "lucia", username: "lulua"}] 
-  // const handleFav = (odontologo) =>{
-  //   if(fav){
-  //     favoritos.push[odontologo]
-  //   }else{
-  //     setFav(false)
-  //     eliminarDeFav(odontologo)
-  //   }
-  //   }
-  
+const [fav, setFav] = useState([])
 
 
 useEffect(() => {
