@@ -1,6 +1,6 @@
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
-import { ContextGlobal } from "./Components/utils/global.context";
+import { ContextProvider } from "./Components/utils/global.context"
 import { Routes, Route } from "react-router-dom";
 import Home from "./Routes/Home";
 import Detail from "./Routes/Detail";
@@ -11,7 +11,7 @@ import Error from "./Routes/Error"
 function App() {
   return (
       <div className="App">
-        <ContextGlobal.Provider>
+        <ContextProvider>
           <Navbar/>
           <Routes>
             <Route path="/home" element={<Home />} />
@@ -21,7 +21,7 @@ function App() {
             <Route path='*' element={<Error />} />
           </Routes>
           <Footer/>
-        </ContextGlobal.Provider>
+        </ContextProvider>
       </div>
   );
 }

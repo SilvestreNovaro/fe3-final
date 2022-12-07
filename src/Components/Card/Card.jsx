@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./Card.module.css"
-import { useEffect } from "react";
 
 
 const Card = ({ name, username, id, fav, setFav }) => {
