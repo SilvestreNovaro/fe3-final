@@ -2,10 +2,10 @@ import React from 'react'
 
 const Footer = () => {
 
-  const styleIcons = {color: 'blue', fontSize: '20px', width: '40px', height: '40px'}
+  const styleIcons = {fontSize: '20px', width: '40px', height: '40px', padding: '5px'}
 
   return (
-    <footer>
+    <footer style={{backgroundColor: 'lightgrey'}}>
         <p>Powered by</p>
         <img src="./images/DH.png" alt='DH-logo' />
         <div>

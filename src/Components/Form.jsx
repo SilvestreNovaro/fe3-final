@@ -23,15 +23,17 @@ const Form = () => {
 
   return (
     <>
-      <h1>Form</h1>
-      <form onSubmit={formik.handleSubmit} className="div-form">
-        <label htmlFor="nombre">Nombre completo</label>
-        <input id="nombre" type="text" name="nombre" onChange={formik.handleChange} value={formik.values.nombre} 
+      <h1 style={{margin: '40px'}}>
+        Form
+      </h1>
+      <form onSubmit={formik.handleSubmit} className="form">
+        <input id="nombre" type="text" name="nombre" onChange={formik.handleChange} placeholder="Nombre completo"
+          value={formik.values.nombre} 
           onBlur={formik.handleBlur} required/>
           {formik.touched.nombre && formik.errors.nombre ? (<div>{formik.errors.nombre}</div>) : null}
 
-        <label htmlFor="email">Email</label>
-        <input id="email" type="email" name="email" onChange={formik.handleChange} value={formik.values.email} 
+        <input id="email" type="email" name="email" onChange={formik.handleChange} placeholder="Email"
+          value={formik.values.email} 
           onBlur={formik.handleBlur} />
           {formik.touched.email && formik.errors.email ? (<div>{formik.errors.email}</div>) : null}
 
