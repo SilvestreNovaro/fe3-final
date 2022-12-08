@@ -26,6 +26,7 @@ export const ContextGlobal = createContext();
 export const ContextProvider = ({ children }) => {
 
   const [theme, setTheme] = useState(initialState.data.light);
+  const [fav, setFav] = useState([])
   
   const handleTheme = () => {
     if(theme === initialState.data.dark) setTheme(initialState.data.light)
@@ -33,7 +34,7 @@ export const ContextProvider = ({ children }) => {
   }
 
   return (
-    <ContextGlobal.Provider value={{theme, handleTheme}}>
+    <ContextGlobal.Provider value={{theme, handleTheme, fav, setFav}}>
       {children}
     </ContextGlobal.Provider>
   );

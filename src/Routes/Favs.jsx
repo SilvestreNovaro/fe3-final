@@ -4,6 +4,9 @@ import Card from "../Components/Card/Card";
 
 const Favs = () => {
 
+  
+
+
   const odontologosObject = JSON.parse(localStorage.getItem("odontologos") || "[]")
 
   return (

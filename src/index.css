@@ -123,6 +123,18 @@ form{
   justify-content: center;
   align-items: center;
 }
+.display-content{
+  display: contents;
+}
+
+.divflex{
+  display: flex;
+  display: contents;
+}
+
+h3{
+  font-size: initial;
+}
 
 h4 {
   display: flex;
